@@ -1,9 +1,14 @@
 function load(){
-	cookie_test();
-	console.log(getCookie('username'));
+	document.getElementById('click_button').onclick = function(event){
+		console.log(event);
+		console.log(clickButton('I can pass varibles'));
+	};
 }
-function clickButton(){
-	console.log('Clicked!');
+function clickButton(str){
+	if(str==undefined)
+		return 'Clicked'
+	else
+		return str;
 }
 function cookie_test(){
 	document.cookie='username=ZN';
