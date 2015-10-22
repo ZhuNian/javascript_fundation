@@ -2,6 +2,9 @@ function load(){
 	cookie_test();
 	console.log(getCookie('username'));
 }
+function clickButton(){
+	console.log('Clicked!');
+}
 function cookie_test(){
 	document.cookie='username=ZN';
 }
